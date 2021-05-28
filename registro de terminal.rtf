@@ -1,0 +1,237 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red159\green160\blue28;\red180\green36\blue25;
+\red47\green180\blue29;\red46\green174\blue187;}
+{\*\expandedcolortbl;;\csgray\c0;\cssrgb\c68468\c68012\c14208;\cssrgb\c76409\c21698\c12524;
+\cssrgb\c20238\c73898\c14947;\cssrgb\c20196\c73240\c78250;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 Last login: Sun May 23 17:16:01 on ttys000\
+\
+The default interactive shell is now zsh.\
+To update your account to use zsh, please run `chsh -s /bin/zsh`.\
+For more details, please visit https://support.apple.com/kb/HT208050.\
+Aldos-MacBook-Pro:~ aldocasal$ git --version\
+git version 2.31.1\
+Aldos-MacBook-Pro:~ aldocasal$ git config --global user.name "Maxicasal7"\
+Aldos-MacBook-Pro:~ aldocasal$ git config --global user.email "maxi.casal@hotmail.com"\
+Aldos-MacBook-Pro:~ aldocasal$ git config --list\
+credential.helper=osxkeychain\
+user.name=Maxicasal7\
+user.email=maxi.casal@hotmail.com\
+Aldos-MacBook-Pro:~ aldocasal$ cd /Users/aldocasal/Documents/Coder/GIT \
+Aldos-MacBook-Pro:GIT aldocasal$ ls\
+contacto.html		imagenes		productos.html\
+estilo			index.html		servicios.html\
+gruposElectrogenos.html	noticias.html\
+Aldos-MacBook-Pro:GIT aldocasal$ git init\
+\cf3 hint: Using 'master' as the name for the initial branch. This default branch name\cf2 \
+\cf3 hint: is subject to change. To configure the initial branch name to use in all\cf2 \
+\cf3 hint: of your new repositories, which will suppress this warning, call:\cf2 \
+\cf3 hint: \cf2 \
+\cf3 hint: 	git config --global init.defaultBranch <name>\cf2 \
+\cf3 hint: \cf2 \
+\cf3 hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and\cf2 \
+\cf3 hint: 'development'. The just-created branch can be renamed via this command:\cf2 \
+\cf3 hint: \cf2 \
+\cf3 hint: 	git branch -m <name>\cf2 \
+Initialized empty Git repository in /Users/aldocasal/Documents/Coder/GIT/.git/\
+Aldos-MacBook-Pro:GIT aldocasal$ git status\
+On branch master\
+\
+No commits yet\
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+	\cf4 .DS_Store\cf2 \
+	\cf4 contacto.html\cf2 \
+	\cf4 estilo/\cf2 \
+	\cf4 gruposElectrogenos.html\cf2 \
+	\cf4 imagenes/\cf2 \
+	\cf4 index.html\cf2 \
+	\cf4 noticias.html\cf2 \
+	\cf4 productos.html\cf2 \
+	\cf4 servicios.html\cf2 \
+\
+nothing added to commit but untracked files present (use "git add" to track)\
+Aldos-MacBook-Pro:GIT aldocasal$ git add productos.html\
+Aldos-MacBook-Pro:GIT aldocasal$ git status\
+On branch master\
+\
+No commits yet\
+\
+Changes to be committed:\
+  (use "git rm --cached <file>..." to unstage)\
+	\cf5 new file:   productos.html\cf2 \
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+	\cf4 .DS_Store\cf2 \
+	\cf4 contacto.html\cf2 \
+	\cf4 estilo/\cf2 \
+	\cf4 gruposElectrogenos.html\cf2 \
+	\cf4 imagenes/\cf2 \
+	\cf4 index.html\cf2 \
+	\cf4 noticias.html\cf2 \
+	\cf4 servicios.html\cf2 \
+\
+Aldos-MacBook-Pro:GIT aldocasal$ git add .\
+Aldos-MacBook-Pro:GIT aldocasal$ git status\
+On branch master\
+\
+No commits yet\
+\
+Changes to be committed:\
+  (use "git rm --cached <file>..." to unstage)\
+	\cf5 new file:   .DS_Store\cf2 \
+	\cf5 new file:   contacto.html\cf2 \
+	\cf5 new file:   estilo/.DS_Store\cf2 \
+	\cf5 new file:   estilo/bootstrap.css\cf2 \
+	\cf5 new file:   gruposElectrogenos.html\cf2 \
+	\cf5 new file:   imagenes/.DS_Store\cf2 \
+	\cf5 new file:   imagenes/GENERADORES 005.JPG\cf2 \
+	\cf5 new file:   imagenes/GENERADORES 006.JPG\cf2 \
+	\cf5 new file:   imagenes/GENERADORES 010.JPG\cf2 \
+	\cf5 new file:   imagenes/GENERADORES 014.JPG\cf2 \
+	\cf5 new file:   imagenes/logo.png\cf2 \
+	\cf5 new file:   imagenes/logo2.jpeg\cf2 \
+	\cf5 new file:   imagenes/torre.jpg\cf2 \
+	\cf5 new file:   index.html\cf2 \
+	\cf5 new file:   noticias.html\cf2 \
+	\cf5 new file:   productos.html\cf2 \
+	\cf5 new file:   servicios.html\cf2 \
+\
+Aldos-MacBook-Pro:GIT aldocasal$ git commit -m "primer commit"\
+[master (root-commit) 6dbbe61] primer commit\
+ 17 files changed, 11088 insertions(+)\
+ create mode 100644 .DS_Store\
+ create mode 100644 contacto.html\
+ create mode 100644 estilo/.DS_Store\
+ create mode 100644 estilo/bootstrap.css\
+ create mode 100644 gruposElectrogenos.html\
+ create mode 100644 imagenes/.DS_Store\
+ create mode 100644 imagenes/GENERADORES 005.JPG\
+ create mode 100644 imagenes/GENERADORES 006.JPG\
+ create mode 100644 imagenes/GENERADORES 010.JPG\
+ create mode 100644 imagenes/GENERADORES 014.JPG\
+ create mode 100644 imagenes/logo.png\
+ create mode 100644 imagenes/logo2.jpeg\
+ create mode 100644 imagenes/torre.jpg\
+ create mode 100644 index.html\
+ create mode 100644 noticias.html\
+ create mode 100644 productos.html\
+ create mode 100644 servicios.html\
+Aldos-MacBook-Pro:GIT aldocasal$ git status\
+On branch master\
+nothing to commit, working tree clean\
+Aldos-MacBook-Pro:GIT aldocasal$ git status\
+On branch master\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git restore <file>..." to discard changes in working directory)\
+	\cf4 modified:   .DS_Store\cf2 \
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+	\cf4 clientes/\cf2 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+Aldos-MacBook-Pro:GIT aldocasal$ git add --all\
+Aldos-MacBook-Pro:GIT aldocasal$ git status\
+On branch master\
+Changes to be committed:\
+  (use "git restore --staged <file>..." to unstage)\
+	\cf5 modified:   .DS_Store\cf2 \
+	\cf5 new file:   clientes/.DS_Store\cf2 \
+	\cf5 new file:   clientes/fargo.png\cf2 \
+\
+Aldos-MacBook-Pro:GIT aldocasal$ git commit -m "agregue carpeta clientes y logo de fargo"\
+[master 5205707] agregue carpeta clientes y logo de fargo\
+ 3 files changed, 0 insertions(+), 0 deletions(-)\
+ create mode 100644 clientes/.DS_Store\
+ create mode 100644 clientes/fargo.png\
+Aldos-MacBook-Pro:GIT aldocasal$ git status\
+On branch master\
+nothing to commit, working tree clean\
+Aldos-MacBook-Pro:GIT aldocasal$ git log\
+\cf3 commit 52057079683717ab2196acd91c221295dae4b624 (
+\f1\b \cf6 HEAD -> \cf5 master
+\f0\b0 \cf3 )\cf2 \
+Author: Maxicasal7 <maxi.casal@hotmail.com>\
+Date:   Thu May 27 01:03:32 2021 -0300\
+\
+    agregue carpeta clientes y logo de fargo\
+\
+\cf3 commit 6dbbe61cdd837166cc03b332fb97057e76785dc5\cf2 \
+Author: Maxicasal7 <maxi.casal@hotmail.com>\
+Date:   Thu May 27 00:44:43 2021 -0300\
+\
+    primer commit\
+Aldos-MacBook-Pro:GIT aldocasal$ git branch ramaUno\
+Aldos-MacBook-Pro:GIT aldocasal$ git branch\
+* \cf5 master\cf2 \
+  ramaUno\
+Aldos-MacBook-Pro:GIT aldocasal$ git checkout ramaUno\
+Switched to branch 'ramaUno'\
+Aldos-MacBook-Pro:GIT aldocasal$ git branch\
+  master\
+* \cf5 ramaUno\cf2 \
+Aldos-MacBook-Pro:GIT aldocasal$ git log --oneline\
+\cf3 5205707 (
+\f1\b \cf6 HEAD -> \cf5 ramaUno
+\f0\b0 \cf3 , 
+\f1\b \cf5 master
+\f0\b0 \cf3 )\cf2  agregue carpeta clientes y logo de fargo\
+\cf3 6dbbe61\cf2  primer commit\
+Aldos-MacBook-Pro:GIT aldocasal$ git status\
+On branch ramaUno\
+nothing to commit, working tree clean\
+Aldos-MacBook-Pro:GIT aldocasal$ git status\
+On branch ramaUno\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+	\cf4 clientes/exolgan.png\cf2 \
+\
+nothing added to commit but untracked files present (use "git add" to track)\
+Aldos-MacBook-Pro:GIT aldocasal$ git add .\
+Aldos-MacBook-Pro:GIT aldocasal$ git status\
+On branch ramaUno\
+Changes to be committed:\
+  (use "git restore --staged <file>..." to unstage)\
+	\cf5 new file:   clientes/exolgan.png\cf2 \
+\
+Aldos-MacBook-Pro:GIT aldocasal$ git commit -m "agregue cliente exolgan"\
+[ramaUno 062c4e1] agregue cliente exolgan\
+ 1 file changed, 0 insertions(+), 0 deletions(-)\
+ create mode 100644 clientes/exolgan.png\
+Aldos-MacBook-Pro:GIT aldocasal$ git checkout master\
+Switched to branch 'master'\
+Aldos-MacBook-Pro:GIT aldocasal$ git branch\
+* \cf5 master\cf2 \
+  ramaUno\
+Aldos-MacBook-Pro:GIT aldocasal$ git merge ramaUno\
+Updating 5205707..062c4e1\
+Fast-forward\
+ clientes/exolgan.png | Bin \cf4 0\cf2  -> \cf5 18688\cf2  bytes\
+ 1 file changed, 0 insertions(+), 0 deletions(-)\
+ create mode 100644 clientes/exolgan.png\
+Aldos-MacBook-Pro:GIT aldocasal$ git status\
+On branch master\
+nothing to commit, working tree clean\
+Aldos-MacBook-Pro:GIT aldocasal$ git log oneline\
+fatal: ambiguous argument 'oneline': unknown revision or path not in the working tree.\
+Use '--' to separate paths from revisions, like this:\
+'git <command> [<revision>...] -- [<file>...]'\
+Aldos-MacBook-Pro:GIT aldocasal$ git log --oneline\
+\cf3 062c4e1 (
+\f1\b \cf6 HEAD -> \cf5 master
+\f0\b0 \cf3 , 
+\f1\b \cf5 ramaUno
+\f0\b0 \cf3 )\cf2  agregue cliente exolgan\
+\cf3 5205707\cf2  agregue carpeta clientes y logo de fargo\
+\cf3 6dbbe61\cf2  primer commit\
+Aldos-MacBook-Pro:GIT aldocasal$ git branch\
+* \cf5 master\cf2 \
+  ramaUno\
+}
