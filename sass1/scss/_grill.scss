@@ -1,0 +1,51 @@
+.grid-container {
+	display: grid;
+	margin: 40px 0 40px 0;
+	grid-template-columns: repeat(3,33%);
+	grid-template-rows: repeat(3,200px);
+	gap: 1px 1px;
+	text-align: center;
+	justify-content: stretch;
+	font-size: 1.5rem;
+	grid-template-areas:
+	"cliU cliD cliT"
+	"cliC cliCi cliS"
+	"cliSi cliO cliN";
+}
+
+.cliUno {
+	grid-area: cliU;
+	background-color:ghostwhite;
+}
+.cliDos {
+	grid-area: cliD;
+	background-color:ghostwhite;
+}
+.cliTre {
+	grid-area: cliT;
+	background-color:ghostwhite;
+}
+.cliCua {
+	grid-area: cliC;
+	background-color:ghostwhite;
+}
+.cliCin {
+	grid-area: cliCi;
+	background-color:ghostwhite;
+}
+.cliSei {
+	grid-area: cliS;
+	background-color:ghostwhite;
+}
+.cliSie {
+	grid-area: cliSi;
+	background-color:ghostwhite;
+}
+.cliOch {
+	grid-area: cliO;
+	background-color:ghostwhite;
+}
+.cliNue {
+	grid-area: cliN;
+	background-color:ghostwhite;
+}

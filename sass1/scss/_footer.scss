@@ -1,0 +1,34 @@
+.footer
+    {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width:100%;
+        background-color: $miblanco;
+        align-content:center;
+        justify-content:space-evenly;
+        text-align: center !important;
+    }
+.footer__enlace
+    {
+        text-decoration: none;
+        color:$mirojo;
+        width:150px;
+        margin: 30px 22px;
+        padding-left:15px;
+        padding-right:15px;
+        border-left: solid 2px $mirojo;
+    }
+.footer__enlace:hover
+    {
+        background-color: firebrick;
+        color: ghostwhite;
+        transition: 0.5s;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+.footer__lista
+    {
+        padding-left: 0;
+        list-style: none;
+    }

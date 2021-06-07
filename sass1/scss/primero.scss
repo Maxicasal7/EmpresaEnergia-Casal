@@ -1,0 +1,206 @@
+/* estilos de scss */
+$mirojo: firebrick;
+$miblanco: ghostwhite;
+body
+    {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1;
+        color: #212529;
+        text-align: left;
+        background-color:#b4694d56;
+    }
+.container
+    {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+@media (min-width: 576px)
+{
+  .container
+  {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px)
+{
+  .container
+  {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) 
+{
+  .container
+  {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) 
+{
+  .container 
+  {
+    max-width: 1140px;
+  }
+}
+.navbar1
+    {
+        display: flex;
+        background-color: $miblanco;
+        flex-direction: row;
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+.navbar__enlace
+    {
+        display:block;
+        padding:30px 15px;
+        text-decoration:none;
+        color: $mirojo;
+        text-align: center;
+        width:150px;
+    }
+.navbar__enlace:hover
+    {
+        background-color: $mirojo;
+        color: $miblanco;
+        transition: 0.5s;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+.navbar__enlace--seleccionado
+    {
+        background-color:$mirojo;
+        color:$miblanco;
+        text-transform: uppercase;
+    }
+.navbar__logo
+    {
+        display: inline-block;
+        padding-top: 0.3125rem;
+        padding-bottom: 0.3125rem;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        line-height: inherit;
+        white-space: nowrap;
+    }
+.navbar__logo--imgr
+    {
+        border-radius:20%;
+    }
+@import "footer";
+@import "grill";
+.lista
+    {
+        position:relative;
+        display:inline-block;
+        padding:0;
+        margin: 0 0 0 150px;
+        list-style-type: none;
+    }
+.lista__item
+    {
+        float: left;
+    }
+ li:hover ul 
+    {
+        display:block;
+        background-color: $miblanco;
+    }
+.lista__lista
+    {
+       position: absolute;
+       display: none;
+       z-index: 1;
+    }
+.lista__lista--item
+    {
+        display: block;
+    }
+.grupoEl 
+    {
+        width:100%;
+        display:flex;
+        flex-direction: row;
+        border: solid 2px firebrick;
+        border-radius: 10%;
+    }
+.grupoEl__img
+    {
+        margin-left:4%; 
+        margin-top: 10%;
+        width:70%; 
+        height:70%;
+        border-radius: 20%;
+    }
+.grupoEl__txt
+    {
+        font-size:1em;
+        margin-top:6px;
+    }
+.grupoEl__txt--mod
+    {
+        margin-top: 10px;
+    }
+.torresI
+    {
+        @extend.grupoEl;
+        border: solid 2px orange;
+    }
+.torresI__img
+    {
+        margin-top: 10%;
+        width:70%; 
+        height:70%;
+        border-radius: 20%;
+        margin-left:4%; 
+    }
+.torresI__txt
+    {
+        margin-top:6px;
+        font-size:1em;
+    }
+.torresI__txt--mod
+    {
+        margin-top: 10px;
+    }
+.descrip
+    {
+        list-style-type: circle;
+    }
+.descrip__ppal
+    {
+        font-size: 1.5em;
+    }
+.galeria
+    {
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+        display: block;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+#secGrid
+    {
+        display:grid;
+        grid-template-areas: 
+        "tu to";
+    }
+    .tab1
+    {
+        grid-area:tu;
+    }
+.tab2
+    {
+        grid-area:to;
+    }
