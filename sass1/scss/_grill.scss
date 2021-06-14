@@ -1,51 +1,186 @@
-.grid-container {
-	display: grid;
-	margin: 40px 0 40px 0;
-	grid-template-columns: repeat(3,33%);
-	grid-template-rows: repeat(3,200px);
-	gap: 1px 1px;
-	text-align: center;
-	justify-content: stretch;
-	font-size: 1.5rem;
-	grid-template-areas:
-	"cliU cliD cliT"
-	"cliC cliCi cliS"
-	"cliSi cliO cliN";
+@media (min-width: 576px)
+{
+	.grid-container 
+	{
+		display: grid;
+		margin: 40px 0 40px 0;
+		grid-template-columns: repeat(2,50%);
+		grid-template-rows: repeat(4,200px);
+		gap: 1px 1px;
+		text-align: center;
+		justify-content: stretch;
+		font-size: 1.5rem;
+		grid-template-areas:
+		"cliU cliD"
+		"cliT cliC"
+		"cliCi cliS"
+		"cliSi cliO"
+		"CliN";
+	}
+	.cliUno {
+		grid-area: cliU;
+	}
+	.cliDos {
+		grid-area: cliD;
+	}
+	.cliTre {
+		grid-area: cliT;
+	}
+	.cliCua {
+		grid-area: cliC;
+	}
+	.cliCin {
+		grid-area: cliCi;
+	}
+	.cliSei {
+		grid-area: cliS;
+	}
+	.cliSie {
+		grid-area: cliSi;
+	}
+	.cliOch {
+		grid-area: cliO;
+	}
+	.cliNue {
+		grid-area: cliN;
+	}
+}
+@media (min-width: 768px)
+{
+	.grid-container 
+	{
+		display: grid;
+		margin: 40px 0 40px 0;
+		grid-template-columns: repeat(2,50%);
+		grid-template-rows: repeat(4,200px);
+		gap: 1px 1px;
+		text-align: center;
+		justify-content: stretch;
+		font-size: 1.5rem;
+		grid-template-areas:
+		"cliU cliD"
+		"cliT cliC"
+		"cliCi cliS"
+		"cliSi cliO"
+		"CliN";
+	}
+	.cliUno {
+		grid-area: cliU;
+	}
+	.cliDos {
+		grid-area: cliD;
+	}
+	.cliTre {
+		grid-area: cliT;
+	}
+	.cliCua {
+		grid-area: cliC;
+	}
+	.cliCin {
+		grid-area: cliCi;
+	}
+	.cliSei {
+		grid-area: cliS;
+	}
+	.cliSie {
+		grid-area: cliSi;
+	}
+	.cliOch {
+		grid-area: cliO;
+	}
+	.cliNue {
+		grid-area: cliN;
+	}
 }
 
-.cliUno {
-	grid-area: cliU;
-	background-color:ghostwhite;
+@media (min-width: 992px)
+{
+	.grid-container 
+	{
+		display: grid;
+		margin: 40px 0 40px 0;
+		grid-template-columns: repeat(3,33%);
+		grid-template-rows: repeat(3,200px);
+		gap: 1px 1px;
+		text-align: center;
+		justify-content: stretch;
+		font-size: 1.5rem;
+		grid-template-areas:
+		"cliU cliD cliT"
+		"cliC cliCi cliS"
+		"cliSi cliO cliN";
+	}
+	.cliUno {
+		grid-area: cliU;
+	}
+	.cliDos {
+		grid-area: cliD;
+	}
+	.cliTre {
+		grid-area: cliT;
+	}
+	.cliCua {
+		grid-area: cliC;
+	}
+	.cliCin {
+		grid-area: cliCi;
+	}
+	.cliSei {
+		grid-area: cliS;
+	}
+	.cliSie {
+		grid-area: cliSi;
+	}
+	.cliOch {
+		grid-area: cliO;
+	}
+	.cliNue {
+		grid-area: cliN;
+	}
 }
-.cliDos {
-	grid-area: cliD;
-	background-color:ghostwhite;
+@media (min-width: 1200px) 
+{
+	.grid-container 
+	{
+		display: grid;
+		margin: 40px 0 40px 0;
+		grid-template-columns: repeat(3,33%);
+		grid-template-rows: repeat(3,200px);
+		gap: 1px 1px;
+		text-align: center;
+		justify-content: stretch;
+		font-size: 1.5rem;
+		grid-template-areas:
+		"cliU cliD cliT"
+		"cliC cliCi cliS"
+		"cliSi cliO cliN";
+	}
+	.cliUno {
+		grid-area: cliU;
+	}
+	.cliDos {
+		grid-area: cliD;
+	}
+	.cliTre {
+		grid-area: cliT;
+	}
+	.cliCua {
+		grid-area: cliC;
+	}
+	.cliCin {
+		grid-area: cliCi;
+	}
+	.cliSei {
+		grid-area: cliS;
+	}
+	.cliSie {
+		grid-area: cliSi;
+	}
+	.cliOch {
+		grid-area: cliO;
+	}
+	.cliNue {
+		grid-area: cliN;
+	}
 }
-.cliTre {
-	grid-area: cliT;
-	background-color:ghostwhite;
-}
-.cliCua {
-	grid-area: cliC;
-	background-color:ghostwhite;
-}
-.cliCin {
-	grid-area: cliCi;
-	background-color:ghostwhite;
-}
-.cliSei {
-	grid-area: cliS;
-	background-color:ghostwhite;
-}
-.cliSie {
-	grid-area: cliSi;
-	background-color:ghostwhite;
-}
-.cliOch {
-	grid-area: cliO;
-	background-color:ghostwhite;
-}
-.cliNue {
-	grid-area: cliN;
-	background-color:ghostwhite;
-}
+

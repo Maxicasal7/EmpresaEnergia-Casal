@@ -18,19 +18,167 @@ body {
 
 @media (min-width: 576px) {
   .container {
-    max-width: 540px; } }
+    max-width: 540px; }
+  #secGrid {
+    display: grid;
+    grid-template-columns: 500px;
+    grid-template-rows: repeat(2, 480px);
+    gap: 1px;
+    text-align: center;
+    justify-content: stretch;
+    font-size: 1.5rem;
+    grid-template-areas: "tu" "to"; }
+  .grid-container {
+    display: grid;
+    margin: 40px 0 40px 0;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(5, 200px);
+    gap: 1px;
+    text-align: center;
+    justify-content: stretch;
+    font-size: 1.5rem;
+    grid-template-areas: "cliU cliD" "cliT cliC" "cliCi cliS" "cliSi cliO" "none cliN"; }
+  .cliUno {
+    grid-area: cliU; }
+  .cliDos {
+    grid-area: cliD; }
+  .cliTre {
+    grid-area: cliT; }
+  .cliCua {
+    grid-area: cliC; }
+  .cliCin {
+    grid-area: cliCi; }
+  .cliSei {
+    grid-area: cliS; }
+  .cliSie {
+    grid-area: cliSi; }
+  .cliOch {
+    grid-area: cliO; }
+  .cliNue {
+    grid-area: cliN; } }
 
 @media (min-width: 768px) {
   .container {
-    max-width: 720px; } }
+    max-width: 720px; }
+  #secGrid {
+    display: grid;
+    grid-template-columns: 700px;
+    grid-template-rows: repeat(2, 480px);
+    gap: 1px;
+    text-align: center;
+    justify-content: stretch;
+    font-size: 1.5rem;
+    grid-template-areas: "tu" "to"; }
+  .grid-container {
+    display: grid;
+    margin: 40px 0 40px 0;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(5, 200px);
+    gap: 1px;
+    text-align: center;
+    justify-content: stretch;
+    font-size: 1.5rem;
+    grid-template-areas: "cliU cliD" "cliT cliC" "cliCi cliS" "cliSi cliO" "none cliN"; }
+  .cliUno {
+    grid-area: cliU; }
+  .cliDos {
+    grid-area: cliD; }
+  .cliTre {
+    grid-area: cliT; }
+  .cliCua {
+    grid-area: cliC; }
+  .cliCin {
+    grid-area: cliCi; }
+  .cliSei {
+    grid-area: cliS; }
+  .cliSie {
+    grid-area: cliSi; }
+  .cliOch {
+    grid-area: cliO; }
+  .cliNue {
+    grid-area: cliN; } }
 
 @media (min-width: 992px) {
   .container {
-    max-width: 960px; } }
+    max-width: 960px; }
+  #secGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 480px;
+    gap: 1px;
+    text-align: center;
+    justify-content: stretch;
+    font-size: 1.5rem;
+    grid-template-areas: "tu to"; }
+  .grid-container {
+    display: grid;
+    margin: 40px 0 40px 0;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(3, 200px);
+    gap: 1px 1px;
+    text-align: center;
+    justify-content: stretch;
+    font-size: 1.5rem;
+    grid-template-areas: "cliU cliD cliT" "cliC cliCi cliS" "cliSi cliO cliN"; }
+  .cliUno {
+    grid-area: cliU; }
+  .cliDos {
+    grid-area: cliD; }
+  .cliTre {
+    grid-area: cliT; }
+  .cliCua {
+    grid-area: cliC; }
+  .cliCin {
+    grid-area: cliCi; }
+  .cliSei {
+    grid-area: cliS; }
+  .cliSie {
+    grid-area: cliSi; }
+  .cliOch {
+    grid-area: cliO; }
+  .cliNue {
+    grid-area: cliN; } }
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px; } }
+    max-width: 1140px; }
+  #secGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 480px;
+    gap: 1px;
+    text-align: center;
+    justify-content: stretch;
+    font-size: 1.5rem;
+    grid-template-areas: "tu to"; }
+  .grid-container {
+    display: grid;
+    margin: 40px 0 40px 0;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(3, 200px);
+    gap: 1px 1px;
+    text-align: center;
+    justify-content: stretch;
+    font-size: 1.5rem;
+    grid-template-areas: "cliU cliD cliT" "cliC cliCi cliS" "cliSi cliO cliN"; }
+  .cliUno {
+    grid-area: cliU; }
+  .cliDos {
+    grid-area: cliD; }
+  .cliTre {
+    grid-area: cliT; }
+  .cliCua {
+    grid-area: cliC; }
+  .cliCin {
+    grid-area: cliCi; }
+  .cliSei {
+    grid-area: cliS; }
+  .cliSie {
+    grid-area: cliSi; }
+  .cliOch {
+    grid-area: cliO; }
+  .cliNue {
+    grid-area: cliN; } }
 
 .navbar1 {
   display: flex;
@@ -90,6 +238,11 @@ body {
   padding-right: 15px;
   border-left: solid 2px firebrick; }
 
+.footer__enlace--seleccionado {
+  background-color: firebrick;
+  color: ghostwhite;
+  text-transform: uppercase; }
+
 .footer__enlace:hover {
   background-color: firebrick;
   color: ghostwhite;
@@ -100,53 +253,6 @@ body {
 .footer__lista {
   padding-left: 0;
   list-style: none; }
-
-.grid-container {
-  display: grid;
-  margin: 40px 0 40px 0;
-  grid-template-columns: repeat(3, 33%);
-  grid-template-rows: repeat(3, 200px);
-  gap: 1px 1px;
-  text-align: center;
-  justify-content: stretch;
-  font-size: 1.5rem;
-  grid-template-areas: "cliU cliD cliT" "cliC cliCi cliS" "cliSi cliO cliN"; }
-
-.cliUno {
-  grid-area: cliU;
-  background-color: ghostwhite; }
-
-.cliDos {
-  grid-area: cliD;
-  background-color: ghostwhite; }
-
-.cliTre {
-  grid-area: cliT;
-  background-color: ghostwhite; }
-
-.cliCua {
-  grid-area: cliC;
-  background-color: ghostwhite; }
-
-.cliCin {
-  grid-area: cliCi;
-  background-color: ghostwhite; }
-
-.cliSei {
-  grid-area: cliS;
-  background-color: ghostwhite; }
-
-.cliSie {
-  grid-area: cliSi;
-  background-color: ghostwhite; }
-
-.cliOch {
-  grid-area: cliO;
-  background-color: ghostwhite; }
-
-.cliNue {
-  grid-area: cliN;
-  background-color: ghostwhite; }
 
 .lista {
   position: relative;
@@ -223,12 +329,23 @@ li:hover ul {
   padding: 0;
   position: relative; }
 
-#secGrid {
-  display: grid;
-  grid-template-areas: "tu to"; }
-
 .tab1 {
   grid-area: tu; }
 
 .tab2 {
   grid-area: to; }
+
+.boton {
+  background-color: firebrick;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px; }
+
+.epigr {
+  text-align: center;
+  color: firebrick;
+  text-decoration: none; }
